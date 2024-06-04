@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Combine, Globe, Truck } from "lucide-react";
 
 export default function Home() {
   return (
@@ -12,6 +13,64 @@ export default function Home() {
             Exclusive collection for everyone
           </h1>
           <Button className="py-4 px-6">Explore now</Button>
+        </div>
+      </section>
+
+      <section className="container pt-10">
+        <h1 className="md:hidden text-lg mb-5">Nexton® always with you</h1>
+        <div className="flex items-center gap-4 overflow-x-scroll scrollbar-hide md:overflow-x-auto md:border md:p-6 md:rounded-xl">
+          <div className="flex flex-1 items-center gap-2 whitespace-nowrap">
+            <div className="mr-1">
+              <Truck />
+            </div>
+            <div>
+              <h2 className="text-base md:text-lg font-semibold">
+                Free shipping
+              </h2>
+              <p className="hidden md:block font-light text-gray-800 dark:text-gray-200">
+                On orders over $50.00
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-1 items-center gap-2 whitespace-nowrap md:border-l md:border-gray-200 md:pl-5">
+            <div className="mr-1">
+              <Combine />
+            </div>
+            <div>
+              <h2 className="text-base md:text-lg font-semibold">
+                Very easy to return
+              </h2>
+              <p className="hidden md:block font-light text-gray-800 dark:text-gray-200">
+                Just phone number
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-1 items-center gap-2 whitespace-nowrap md:border-l md:border-gray-200 md:pl-5">
+            <div className="mr-1">
+              <Globe />
+            </div>
+            <div>
+              <h2 className="text-base md:text-lg font-semibold">
+                Worldwide delivery
+              </h2>
+              <p className="hidden md:block font-light text-gray-800 dark:text-gray-200">
+                Fast delivery worldwide
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-1 items-center gap-2 whitespace-nowrap md:border-l md:border-gray-200 md:pl-5">
+            <div className="mr-1">
+              <Truck />
+            </div>
+            <div>
+              <h2 className="text-base md:text-lg font-semibold">
+                Refunds policy
+              </h2>
+              <p className="hidden md:block font-light text-gray-800 dark:text-gray-200">
+                60 days return for any reason
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
